@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="/javascripts/fruits.js">
+
+    </script>
+
+    <title>FRUITS APP</title>
+</head>
+
+<body>
+    <h1>Fruits</h1>
+    <p>SEE ALL THE FRUITS</p>
+
+    <form>
+        Add a fruit:<br>
+        <input type="text" name="fruitname">
+        <input type="submit" value="Submit">
+    </form>
+
+    {{#each fruits}}
+        <h1>{{this.name}}</h1>
+    {{/each}}
+</body>
+
+</html>
